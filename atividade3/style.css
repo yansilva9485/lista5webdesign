@@ -1,0 +1,64 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55)), url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2868840/library_hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55)), url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3353470/library_hero.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: min(850px, 90%);
+  margin: 0 auto;
+  padding-top: 90px;
+  width: min(380px, 86%);
+  margin-left: 10%;
+  padding-top: 80px;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+  margin: 0 0 16px;
+  color: #8b1f2d;
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  gap: 12px;
+}
+
+.caixa {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(15, 25, 45, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 22px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(216, 198, 198, 0.78));
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 5px 6px 14px rgba(0, 0, 0, 0.55);
+  color: #222;
+  line-height: 1.35;
+}
+
+.caixa h2 {
+  margin-top: 0;
+  color: #8b1f2d;
+}
+
+.caixa p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  section { flex-direction: column; }
+  main { margin: 0 auto; padding-top: 40px; }
+}
