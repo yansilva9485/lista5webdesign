@@ -1,154 +1,170 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 35px 18px;
-  background-color: #111;
-  background-image: conic-gradient(
-    #1d1d1d 25%,
-    #111 0 50%,
-    #1d1d1d 0 75%,
-    #111 0
-  );
-  background-size: 24px 24px;
-  font-family: Arial, sans-serif;
-  color: #333;
+    margin: 0;
+    padding: 35px 18px;
+
+    background-color: #111;
+
+    background-image: conic-gradient(
+        #1d1d1d 25%,
+        #111 0 50%,
+        #1d1d1d 0 75%,
+        #111 0
+    );
+
+    background-size: 24px 24px;
+
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
 main {
-  width: min(900px, 100%);
-  margin: 0 auto;
-  overflow: hidden;
-  border: 5px solid white;
-  background: white;
-  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.6);
+    width: min(900px, 100%);
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    border: 5px solid white;
+    background: white;
+
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 
+/* IMAGEM DO TOPO */
 
 .imagem-topo {
-  height: 390px;
-  background-image: url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/860510/library_hero.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+    width: 100%;
+    height: 390px;
+
+    background-image: url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/860510/library_hero.jpg");
+
+    background-position: center;
+    background-size: cover;
+
+    /* NÃO fica fixa */
+    background-attachment: scroll;
 }
 
 
+/* TEXTO */
+
 .caixa-texto {
-  padding: 28px 34px;
-  background: white;
+    padding: 28px 34px;
+    background: white;
 }
 
 h1,
 h2 {
-  color: #d5921f;
+    color: #d5921f;
 }
 
 h1 {
-  margin: 0 0 8px;
-  font-size: 32px;
+    margin: 0 0 8px;
+    font-size: 32px;
 }
 
 h2 {
-  margin: 0 0 20px;
-  font-size: 19px;
+    margin: 0 0 20px;
+    font-size: 19px;
 }
 
 p {
-  line-height: 1.5;
+    line-height: 1.5;
 }
 
 strong {
-  color: #9a6516;
+    color: #9a6516;
 }
 
 
-
+/* SEÇÃO DOS BOSSES */
 
 .bosses {
-  padding: 35px 34px;
-  background: #eeeeee;
+    padding: 35px 34px;
+    background: #eeeeee;
 }
 
 .bosses > h2 {
-  text-align: center;
-  margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
 }
+
+
+/* CADA BOSS */
 
 .boss {
-  margin-bottom: 30px;
-  background: white;
-  overflow: hidden;
-  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
-}
+    margin-bottom: 35px;
+    background: white;
 
-.boss-imagem {
-  height: 280px;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 
+/* IMAGEM DOS BOSSES */
 
+.boss img {
+    display: block;
 
-.cacador {
-  background-image: url("https://www.gamesatlas.com/images/jch-optimize/ng/images_little-nightmares-2_little-nightmares-2-the-hunter.webp");
-}
+    width: 100%;
+    height: 280px;
 
-.professora {
-  background-image: url("https://steamcardexchange.net/images/cards/860510/11.jpg");
-}
+    object-fit: cover;
 
-.doutor {
-  background-image: url("https://nobleorderbrewing.com/img/lists/44/little-nightmares-10-scariest-monsters-8.jpg");
-}
-
-.homem-magro {
-  background-image: url("https://en.bandainamcoent.eu/sites/default/files/2021-02/LNII_ThinMan.jpg");
+    /* Efeito da imagem parada */
+    position: sticky;
+    top: 0;
 }
 
 
+/* TEXTO DO BOSS */
 
 .boss-texto {
-  padding: 20px 25px;
+    padding: 20px 25px;
 }
 
 .boss-texto h3 {
-  margin-top: 0;
-  color: #d5921f;
-  font-size: 22px;
+    margin-top: 0;
+
+    color: #d5921f;
+
+    font-size: 22px;
 }
 
 .boss-texto p {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 
+/* CELULAR */
+
 @media (max-width: 600px) {
 
-  body {
-    padding: 20px 10px;
-  }
+    body {
+        padding: 20px 10px;
+    }
 
-  .imagem-topo {
-    height: 230px;
-    background-attachment: scroll;
-  }
+    .imagem-topo {
+        height: 230px;
+    }
 
-  .caixa-texto {
-    padding: 22px;
-  }
+    .caixa-texto {
+        padding: 22px;
+    }
 
-  .bosses {
-    padding: 25px 22px;
-  }
+    .bosses {
+        padding: 25px 22px;
+    }
 
-  .boss-imagem {
-    height: 200px;
-    background-attachment: scroll;
-  }
+    .boss img {
+        height: 200px;
+        position: static;
+    }
 }
