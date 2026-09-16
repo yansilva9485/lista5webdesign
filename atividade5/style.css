@@ -26,6 +26,8 @@ main {
   box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
+
+
 .imagem-topo {
   height: 390px;
   background-image: url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/860510/library_hero.jpg");
@@ -33,6 +35,7 @@ main {
   background-size: cover;
   background-attachment: fixed;
 }
+
 
 .caixa-texto {
   padding: 28px 34px;
@@ -62,12 +65,15 @@ strong {
   color: #9a6516;
 }
 
+
+
+
 .bosses {
-  padding: 30px 34px;
+  padding: 35px 34px;
   background: #eeeeee;
 }
 
-.bosses h2 {
+.bosses > h2 {
   text-align: center;
   margin-bottom: 30px;
 }
@@ -75,33 +81,37 @@ strong {
 .boss {
   margin-bottom: 30px;
   background: white;
-  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .boss-imagem {
-  height: 250px;
+  height: 280px;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
+
+
+
 .cacador {
-  background-image: url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/860510/library_hero.jpg");
+  background-image: url("https://www.gamesatlas.com/images/jch-optimize/ng/images_little-nightmares-2_little-nightmares-2-the-hunter.webp");
 }
 
 .professora {
-  background-image: url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/860510/library_hero.jpg");
+  background-image: url("https://steamcardexchange.net/images/cards/860510/11.jpg");
 }
 
 .doutor {
-  background-image: url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/860510/library_hero.jpg");
+  background-image: url("https://nobleorderbrewing.com/img/lists/44/little-nightmares-10-scariest-monsters-8.jpg");
 }
 
 .homem-magro {
-  background-image: url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/860510/library_hero.jpg");
+  background-image: url("https://en.bandainamcoent.eu/sites/default/files/2021-02/LNII_ThinMan.jpg");
 }
+
+
 
 .boss-texto {
   padding: 20px 25px;
@@ -116,6 +126,7 @@ strong {
 .boss-texto p {
   margin-bottom: 0;
 }
+
 
 @media (max-width: 600px) {
 
