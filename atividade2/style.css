@@ -1,1 +1,38 @@
+* { box-sizing: border-box; }
 
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55)), url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2868840/library_hero.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: min(850px, 90%);
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+}
+
+section {
+  display: flex;
+  gap: 20px;
+}
+
+.caixa {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(15, 25, 45, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 600px) {
+  section { flex-direction: column; }
+}
