@@ -1,4 +1,6 @@
-* { box-sizing: border-box; }
+* { 
+  box-sizing: border-box; 
+}
 
 body {
   margin: 0;
@@ -31,6 +33,11 @@ section {
   padding: 20px;
   background-color: rgba(15, 25, 45, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Aplica opacidade baixa apenas na caixa da direita */
+.caixa:last-child {
+  opacity: 0.3; /* Ajuste entre 0.1 (muito transparente) e 0.9 (pouco transparente) */
 }
 
 @media (max-width: 600px) {
