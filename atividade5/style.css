@@ -5,112 +5,73 @@
 }
 
 body {
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #4a0000, #1a0000, #050505);
-  background-attachment: fixed;
-  color: #e0e0e0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px 20px;
+  background-image: url("fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
 main {
-  width: 100%;
-  max-width: 850px;
-  margin: 0 auto;
+  width: 80%;
+  margin: auto;
 }
 
 .imagem-topo {
   width: 100%;
-  height: 220px;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url("https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1000&auto=format&fit=crop");
-  background-position: center;
+  height: 200px;
+  background-image: url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/860510/library_hero.jpg");
   background-size: cover;
-  border-radius: 12px;
-  margin-bottom: 30px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
-  border: 1px solid rgba(255, 77, 77, 0.3);
+  background-position: center;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 .caixa-texto {
-  background-color: rgba(20, 0, 0, 0.75);
-  border: 1px solid rgba(255, 77, 77, 0.25);
-  border-radius: 12px;
-  padding: 30px;
-  margin-bottom: 40px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 h1 {
-  color: #ff4d4d;
-  font-size: 32px;
   text-align: center;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  text-shadow: 0 2px 10px rgba(255, 77, 77, 0.4);
+  margin-bottom: 10px;
 }
 
 h2 {
-  color: #ff8080;
-  font-size: 20px;
   text-align: center;
-  margin-bottom: 25px;
-  font-weight: 400;
+  margin-bottom: 20px;
 }
 
-.caixa-texto p {
-  font-size: 15px;
+p {
+  font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 16px;
-  color: #d1d1d1;
-}
-
-.caixa-texto p strong {
-  color: #ff4d4d;
-  font-size: 16px;
+  margin-bottom: 15px;
 }
 
 .bosses {
-  margin-top: 30px;
-}
-
-.bosses h2 {
-  color: #ff4d4d;
-  font-size: 26px;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 20px;
-  border-bottom: 2px solid rgba(255, 77, 77, 0.3);
-  padding-bottom: 8px;
+  margin-top: 40px;
 }
 
 .boss {
   display: flex;
   align-items: center;
-  gap: 20px;
-  background-color: rgba(15, 15, 15, 0.85);
-  border: 1px solid rgba(255, 77, 77, 0.2);
-  border-radius: 12px;
-  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  border-radius: 10px;
+  gap: 20px;
   overflow: hidden;
 }
 
-.boss:hover {
-  transform: translateY(-3px);
-  border-color: rgba(255, 77, 77, 0.6);
-}
-
 .boss img {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
-  border: 1px solid rgba(255, 77, 77, 0.3);
   flex-shrink: 0;
 }
 
@@ -119,26 +80,5 @@ h2 {
 }
 
 .boss-texto h3 {
-  color: #ff4d4d;
-  font-size: 20px;
   margin-bottom: 10px;
-}
-
-.boss-texto p {
-  color: #cccccc;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-@media (max-width: 600px) {
-  .boss {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .boss img {
-    width: 100%;
-    max-width: 250px;
-    height: 180px;
-  }
 }
