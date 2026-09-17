@@ -1,84 +1,139 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
 }
+
 
 body {
-  background-image: url("fundo.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 35px 18px;
+    background-color: #111;
+    background-image: conic-gradient(
+        #1d1d1d 25%,
+        #111 0 50%,
+        #1d1d1d 0 75%,
+        #111 0
+    );
+    background-size: 24px 24px;
+    font-family: Arial, sans-serif;
+    color: #333;
 }
+
 
 main {
-  width: 80%;
-  margin: auto;
+    width: min(900px, 100%);
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid white;
+    background: white;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.6);
 }
+
 
 .imagem-topo {
-  width: 100%;
-  height: 200px;
-  background-image: url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/860510/library_hero.jpg");
-  background-size: cover;
-  background-position: center;
-  margin-top: 20px;
-  border-radius: 10px;
+    width: 100%;
+    height: 390px;
+    background-image: url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/860510/library_hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
 }
+
 
 .caixa-texto {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
+    padding: 28px 34px;
+    background: white;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 10px;
+.caixa-texto h1,
+.caixa-texto h2 {
+    color: #d5921f;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
+.caixa-texto h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
 }
 
-p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 15px;
+.caixa-texto h2 {
+    margin: 0 0 20px;
+    font-size: 19px;
 }
+
+.caixa-texto p {
+    line-height: 1.5;
+    color: #333333;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.caixa-texto strong {
+    color: #9a6516;
+}
+
 
 .bosses {
-  margin-top: 40px;
+    padding: 35px 34px;
+    background: #eeeeee;
+}
+
+.bosses > h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #d5921f;
 }
 
 .boss {
-  display: flex;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  gap: 20px;
-  overflow: hidden;
+    margin-bottom: 35px;
+    background: white;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .boss img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 8px;
-  flex-shrink: 0;
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    position: sticky;
+    top: 0;
 }
 
 .boss-texto {
-  flex: 1;
+    padding: 20px 25px;
 }
 
 .boss-texto h3 {
-  margin-bottom: 10px;
+    margin-top: 0;
+    color: #d5921f;
+    font-size: 22px;
+}
+
+.boss-texto p {
+    margin-bottom: 0;
+    color: #333333;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .imagem-topo {
+        height: 230px;
+    }
+
+    .caixa-texto {
+        padding: 22px;
+    }
+
+    .bosses {
+        padding: 25px 22px;
+    }
+
+    .boss img {
+        height: 200px;
+        position: static;
+    }
 }
