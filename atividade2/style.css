@@ -5,7 +5,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(139, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2868840/library_hero.jpg");
+  background-image: url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2868840/library_hero.jpg");
   background-position: center;
   background-size: cover;
   color: white;
@@ -22,14 +22,13 @@ h1 {
   text-align: center;
   text-shadow: 2px 2px 5px black;
   margin-bottom: 30px;
-  color: #ff4d4d;
 }
 
 h2 {
   margin-top: 0;
   font-size: 20px;
   margin-bottom: 15px;
-  color: #8b0000;
+  color: #111;
 }
 
 section {
