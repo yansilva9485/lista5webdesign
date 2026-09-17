@@ -1,170 +1,144 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 35px 18px;
-
-    background-color: #111;
-
-    background-image: conic-gradient(
-        #1d1d1d 25%,
-        #111 0 50%,
-        #1d1d1d 0 75%,
-        #111 0
-    );
-
-    background-size: 24px 24px;
-
-    font-family: Arial, sans-serif;
-    color: #333;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #4a0000, #1a0000, #050505);
+  background-attachment: fixed;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 20px;
 }
 
 main {
-    width: min(900px, 100%);
-    margin: 0 auto;
-
-    overflow: hidden;
-
-    border: 5px solid white;
-    background: white;
-
-    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
 }
-
-
-/* IMAGEM DO TOPO */
 
 .imagem-topo {
-    width: 100%;
-    height: 390px;
-
-    background-image: url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/860510/library_hero.jpg");
-
-    background-position: center;
-    background-size: cover;
-
-    /* NÃO fica fixa */
-    background-attachment: scroll;
+  width: 100%;
+  height: 220px;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url("https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1000&auto=format&fit=crop");
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 77, 77, 0.3);
 }
-
-
-/* TEXTO */
 
 .caixa-texto {
-    padding: 28px 34px;
-    background: white;
-}
-
-h1,
-h2 {
-    color: #d5921f;
+  background-color: rgba(20, 0, 0, 0.75);
+  border: 1px solid rgba(255, 77, 77, 0.25);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
 }
 
 h1 {
-    margin: 0 0 8px;
-    font-size: 32px;
+  color: #ff4d4d;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 10px rgba(255, 77, 77, 0.4);
 }
 
 h2 {
-    margin: 0 0 20px;
-    font-size: 19px;
+  color: #ff8080;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 400;
 }
 
-p {
-    line-height: 1.5;
+.caixa-texto p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #d1d1d1;
 }
 
-strong {
-    color: #9a6516;
+.caixa-texto p strong {
+  color: #ff4d4d;
+  font-size: 16px;
 }
-
-
-/* SEÇÃO DOS BOSSES */
 
 .bosses {
-    padding: 35px 34px;
-    background: #eeeeee;
+  margin-top: 30px;
 }
 
-.bosses > h2 {
-    text-align: center;
-    margin-bottom: 30px;
+.bosses h2 {
+  color: #ff4d4d;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 77, 77, 0.3);
+  padding-bottom: 8px;
 }
-
-
-/* CADA BOSS */
 
 .boss {
-    margin-bottom: 35px;
-    background: white;
-
-    overflow: hidden;
-
-    border-radius: 8px;
-
-    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(15, 15, 15, 0.85);
+  border: 1px solid rgba(255, 77, 77, 0.2);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  overflow: hidden;
 }
 
-
-/* IMAGEM DOS BOSSES */
+.boss:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 77, 77, 0.6);
+}
 
 .boss img {
-    display: block;
-
-    width: 100%;
-    height: 280px;
-
-    object-fit: cover;
-
-    /* Efeito da imagem parada */
-    position: sticky;
-    top: 0;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 77, 77, 0.3);
+  flex-shrink: 0;
 }
 
-
-/* TEXTO DO BOSS */
-
 .boss-texto {
-    padding: 20px 25px;
+  flex: 1;
 }
 
 .boss-texto h3 {
-    margin-top: 0;
-
-    color: #d5921f;
-
-    font-size: 22px;
+  color: #ff4d4d;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .boss-texto p {
-    margin-bottom: 0;
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-
-/* CELULAR */
-
 @media (max-width: 600px) {
+  .boss {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    body {
-        padding: 20px 10px;
-    }
-
-    .imagem-topo {
-        height: 230px;
-    }
-
-    .caixa-texto {
-        padding: 22px;
-    }
-
-    .bosses {
-        padding: 25px 22px;
-    }
-
-    .boss img {
-        height: 200px;
-        position: static;
-    }
+  .boss img {
+    width: 100%;
+    max-width: 250px;
+    height: 180px;
+  }
 }
