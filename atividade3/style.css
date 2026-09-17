@@ -7,11 +7,9 @@
 body {
   min-height: 100vh;
   font-family: Arial, sans-serif;
-  /* Fundo vermelho vibrante em gradiente */
   background: linear-gradient(135deg, #cc1111, #880000, #440000);
   background-attachment: fixed;
   
-  /* Centralização perfeita na tela */
   display: flex;
   justify-content: center;
   align-items: center;
