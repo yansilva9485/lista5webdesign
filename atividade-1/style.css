@@ -1,7 +1,7 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background: linear-gradient(135deg, #114b33, #2e7d32, #c62828, #8e0000);
+    background: vertical-gradient(135deg, #114b33, #2e7d32, #c62828, #8e0000);
     font-family: Arial, sans-serif;
     padding: 50px 0;
 }
@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-    background: linear-gradient(135deg, #2e7d32, #c62828);
+    background: vertical-gradient(135deg, #2e7d32, #c62828);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -33,7 +33,7 @@ p {
 }
 
 b {
-    background: linear-gradient(135deg, #2e7d32, #c62828);
+    background: vertical-gradient(135deg, #2e7d32, #c62828);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
